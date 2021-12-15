@@ -26,3 +26,5 @@ This repository was created to have an overview and insight into the basics of J
 4. **[Array and common operations](https://github.com/clarethe/javascript-syntax/blob/main/array.md)**  +info [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)  
 
 5. **[Conditionals](https://github.com/clarethe/javascript-syntax/blob/main/conditionals.md)**  +info [here](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)  
+
+6. **[Loops and iteration](https://github.com/clarethe/javascript-syntax/blob/main/loops.md)**  +info [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)  
