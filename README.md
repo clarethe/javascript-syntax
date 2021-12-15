@@ -24,3 +24,5 @@ This repository was created to have an overview and insight into the basics of J
 3. **[Object declaration ](https://github.com/clarethe/javascript-syntax/blob/main/object-declaration.md)**  +info [here](https://www.javascripttutorial.net/javascript-objects/)  
 
 4. **[Array and common operations](https://github.com/clarethe/javascript-syntax/blob/main/array.md)**  +info [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)  
+
+5. **[Conditionals](https://github.com/clarethe/javascript-syntax/blob/main/conditionals.md)**  +info [here](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)  
