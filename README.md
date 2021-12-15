@@ -22,3 +22,5 @@ This repository was created to have an overview and insight into the basics of J
 2. **[Destructuring assignment ](https://github.com/clarethe/javascript-syntax/blob/main/destructuring-assigment.md)**  +info [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)  
 
 3. **[Object declaration ](https://github.com/clarethe/javascript-syntax/blob/main/object-declaration.md)**  +info [here](https://www.javascripttutorial.net/javascript-objects/)  
+
+4. **[Array and common operations](https://github.com/clarethe/javascript-syntax/blob/main/array.md)**  +info [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)  
