@@ -1,127 +1,202 @@
 <h1 align="center">
-<br>
-  <br>
-    <img src="./images/javascript-array.png" />
-    <br>
-   Array
-  <br><br>
+<br></br>
+       Array
+<br></br>
 </h1>
  
+<img src="./images/array-cheatsheet.jpg" />
 
 [![Visitor](https://visitor-badge.laobi.icu/badge?page_id=clarethe)](https://github.com/clarethe) [![GitHub followers](https://img.shields.io/github/followers/clarethe.svg?style=social&label=Follow)](https://github.com/clarethe?tab=followers)
 
 The JavaScript Array class is a global object that is used in the construction of arrays; which are high-level, list-like objects and access them by a single variable.
 
+
 ## Create an Array
 
 ```
-let fruits = ['Apple', 'Banana']
-
-console.log(fruits.length) // 2
+let fruits = ["Apple", "Banana"]
 ```
 
-## Access an Array item using the index position
+## To add/remove elements:
+
+
+
+**`push(...items)`**  - adds items to the end
 
 ```
-let first = fruits[0]                  // Apple
-
-let last = fruits[fruits.length - 1]   // Banana
-
+let newLength = fruits.push("Orange")    // ["Apple", "Banana", "Orange"]
 ```
 
-## Loop over an Array
+**`pop()`** -  remove an item from the end
 
 ```
-fruits.forEach(function(item, index, array) {
-  console.log(item, index)
-})
-```
-Output:
-```
-Apple  0
-Banana 1
+let last = fruits.pop() // ["Apple"]
 ```
 
-## Add an item to the end of an Array 
-**`push`** 
+**`shift()`**  - remove an item from the beggining
 
-```
-let newLength = fruits.push('Orange')    // ["Apple", "Banana", "Orange"]
-```
-## Remove an item from the end of an Array
-**`pop`** 
-
-```
-let last = fruits.pop() // ["Apple", "Banana"]
-```
-It has removed "Orange" from the end.
-
-## Remove an item from the beggining of an Array
-**`shift`** 
 ```
 let first = fruits.shift() // ["Banana"]
 ```
-It has removed "Apple" from the front.
 
-## Add an item to the beginning of an Array
-**`unshift`** 
+**`unshift(...items)`**  - adds items to the beggining
 
 ```
-let newLength = fruits.unshift('Strawberry')  // ["Strawberry", "Banana"]
+let newLength = fruits.unshift('Strawberry')  // ["Strawberry", "Apple", "Banana"]
 ```
 
-## Find the index of an item in the Array
-**`indexOf`** 
+**`splice(pos, deleteCount, ...items)`**  - at index 'pos' deletes 'deleteCount' elements and inserts 'items' +[info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)  
+
+- index at which to start changing the array
+- integer indicating the number of elements in the array to remove from start
+- elements to add to the array, beginning from start. If you do not specify any elements, splice() will only remove elements from the array.
+
 
 ```
-fruits.push('Mango')    // ["Strawberry", "Banana", "Mango"]
+let removedItem = fruits.splice(1, 1) // ["Apple"]
+```
+**`slice(start, end)`** - creates a new array, copies elements from index 'start' till 'end' (not inclusive) into it +[info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)  
 
-let pos = fruits.indexOf('Banana')  
+This is how to make a copy:
+
+```
+let shallowCopy = fruits.slice() // ["Apple", "Banana"]
+```
+
+**`concat(...items)`** - returns a new array: copies all members of the current one and adds 'items' to it +[info](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)  
+
+```
+let fruits = ["Apple", "Banana"]
+let drinks = ["Milk", "Juice"]
+let result = fruits.concat(drinks);
+
+console.log(result)
 ```
 
 Output:
 
 ```
-1
+["Apple", "Banana", "Milk", "Juice"] 
 ```
-## Remove an item by index position
-**`splice`** 
 
-```splice(start, deleteCount, item1, item2, itemN)```
+## To search among elements:
 
-```start``` : The index at which to start changing the array
-```deleteCount (Optional)``` : integer indicating the number of elements in the array to remove from start
-```item1, item2, ... (Optional)``` :  The elements to add to the array, beginning from start. If you do not specify any elements, splice() will only remove elements from the array.
+**`indexOf/lastIndexOf(item, pos)`** - look for 'item' starting from position 'pos', return the index or -1 if not found +[info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)  
 
 
 ```
-let removedItem = fruits.splice(pos, 1) // ["Strawberry", "Mango"]
+let fruits = ["Strawberry", "Banana", "Mango"]
+
+let pos = fruits.indexOf('Banana')  //Output: 1
 ```
-It has removed "Banana" from the array.
-
-+splice info [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)  
-
-## Copy an Array
-**`slice`** 
-
-This is how to make a copy:
-```
-let shallowCopy = fruits.slice() // ["Strawberry", "Mango"]
-``````
-
-+info [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)  
 
 
-## Accessing array elements
+**`includes(value)`** - returns 'true' if the array has value, otherwise 'false' +[info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)  
 
-JavaScript arrays are zero-indexed. The first element of an array is at index 0, and the last element is at the index value equal to the value of the array's length property minus 1.
-
-Using an invalid index number returns ```undefined```.
 
 ```
-let array = ['this is the first element', 'this is the second element', 'this is the last element']
+const pets = ['cat', 'dog', 'bat'];
 
-console.log(array[0])                   // logs 'this is the first element'
-console.log(array[1])                   // logs 'this is the second element'
-console.log(array[array.length - 1])    // logs 'this is the last element'
+console.log(pets.includes('cat'));     //Output: true
+console.log(pets.includes('bird'));    //Output: false
 ```
+
+
+**`find/filter(func)`** - filter elements through the function, return first/all values that make it return 'true' +[info](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)  
+
+
+```
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+const result = words.filter(word => word.length > 6);
+
+console.log(result); 
+//Output: Array ["exuberant", "destruction", "present"]
+```
+
+
+**`findIndex`** - is like 'find', but returns the index instead of a value +[info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)  
+
+ 
+
+```
+const array = [5, 12, 8, 130, 44];
+const isLargeNumber = (element) => element > 13;
+
+console.log(array.findIndex(isLargeNumber));
+// expected output: 3
+```
+ 
+ ## To iterate over elements:
+
+**`forEach(func)`** - calls 'func' for every element, does not return anything +[info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)  
+
+```
+const array = ['a', 'b', 'c'];
+
+array.forEach(element => console.log(element));
+
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
+```
+ 
+## To transform the array:
+
+**`map(func)`** - creates a new array from results of calling 'func' for every element +[info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)  
+
+```
+const array = [1, 2, 4, 5];
+
+// pass a function to map
+const result = array.map(x => x * 2);
+
+console.log(result);
+// expected output: Array [2, 4, 8, 10]
+```
+
+**`sort(func)`** - sorts the array in-place, then returns it +[info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)  
+
+```
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+// expected output: Array ["Dec", "Feb", "Jan", "March"]
+```
+
+**`reverse()`** - reverses the array in-place, then returns it +[info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)  
+
+```
+const array = ['one', 'two', 'three'];
+const result = array.reverse();
+
+console.log(reversed);
+// expected output: Array ["three", "two", "one"]
+
+```
+
+**`split/join`** - convert a string to array and back. +[info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+```
+const str = 'The quick brown fox jumps over the lazy dog.';
+
+const words = str.split(' ');
+console.log(words[3]);
+// expected output: "fox"
+```
+
+**`reduce/reduceRight(func(accumulator, current), initial)`** - calculate a single value over the array by calling 'func' for each element and passing an intermediate result between the calls +[info](https://www.freecodecamp.org/news/reduce-f47a7da511a9/)  
+
+```
+const euros = [29.76, 41.85, 46.5];
+
+const sum = euros.reduce((total, amount) => total + amount); 
+
+sum // 118.11
+```
+
+## Additionally:
+
+**`Array.isArray(arr)`** - checks 'arr' for being an array +[info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)  
+
+<br></br>
+<img src="./images/array-sheet.png" />
+<img src="./images/array-methods.png" />
