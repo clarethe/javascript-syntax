@@ -20,3 +20,5 @@ This repository was created to have an overview and insight into the basics of J
 1. **[Declaration of variables VAR, LET, CONST ](https://github.com/clarethe/javascript-syntax/blob/main/variables-var-let-const.md)**  +info [here](https://dmitripavlutin.com/javascript-variables-const-let-var/)  
 
 2. **[Destructuring assignment ](https://github.com/clarethe/javascript-syntax/blob/main/destructuring-assigment.md)**  +info [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)  
+
+3. **[Object declaration ](https://github.com/clarethe/javascript-syntax/blob/main/object-declaration.md)**  +info [here](https://www.javascripttutorial.net/javascript-objects/)  

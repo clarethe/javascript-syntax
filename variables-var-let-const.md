@@ -166,17 +166,7 @@ The code block and a function body create a scope for **`const`**  variables. Th
 
 From the usage perspective, you should use **`const`** variables as read-only that you don't plan to reassign.
 
+<img align="center"  src="./images/drawImage.jpg" />
+<img align="center"  src="./images/const-vs-let-vs-var.png" />
 
-<h1 align="center">
-<br>
-  <img src="./images/drawImage.jpg" />
-  <br>
-</h1>
- 
-
- <h1 align="center">
-<br>
-  <img src="./images/const-vs-let-vs-var.png" />
-  <br>
-</h1>
  
