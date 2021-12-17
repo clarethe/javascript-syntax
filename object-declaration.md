@@ -1,7 +1,7 @@
 <h1 align="center">
 <br>
   <br>
-    <img src="./images/js-object-props.png" />
+    <img src="./images/js-object-props.png" width="800" />
     <br>
    JavaScript Objects
   <br><br>

@@ -197,6 +197,7 @@ sum // 118.11
 
 **`Array.isArray(arr)`** - checks 'arr' for being an array +[info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)  
 
-<br></br>
-<img src="./images/array-sheet.png" />
-<img src="./images/array-methods.png" />
+<br>
+<img src="./images/array-sheet.png" width="600" />
+<br>
+<img src="./images/array-methods.png" width="600" />

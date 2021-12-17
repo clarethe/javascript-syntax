@@ -28,3 +28,5 @@ This repository was created to have an overview and insight into the basics of J
 5. **[Conditionals](https://github.com/clarethe/javascript-syntax/blob/main/conditionals.md)**  +info [here](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)  
 
 6. **[Loops and iteration](https://github.com/clarethe/javascript-syntax/blob/main/loops.md)**  +info [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)  
+
+7. **[Functions](https://github.com/clarethe/javascript-syntax/blob/main/functions.md)**  +info [here](https://www.programiz.com/javascript/function)  
