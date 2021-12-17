@@ -143,6 +143,15 @@ console.log('employeeId' in employee);    //Output: true
 
 ```
 
+## Constructor, operator "new"
+
+The regular  **`{...} `** syntax allows to create one object. But often we need to create many similar objects, like multiple users or menu items and so on.
+
+That can be done using constructor functions and the **`new`** operator.
+
+<img src="./images/constructor-object.png"  width="700" />
+
+
 ## Iterating over properties of an object using for...in loop
 
 To iterate over all properties you use the **`for...in `**  loop.
@@ -172,3 +181,4 @@ Output:
 'url'
 'tags'
 ```
+
