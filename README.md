@@ -31,6 +31,8 @@ This repository was created to have an overview and insight into the basics of J
 
 7. **[Functions](https://github.com/clarethe/javascript-syntax/blob/main/functions.md)**  +info [here](https://www.programiz.com/javascript/function)  
 
-7. **[Asynchronous](https://github.com/clarethe/javascript-syntax/blob/main/async.md)**  +info [here](https://www.programiz.com/javascript/setTimeout)  
+8. **[Asynchronous](https://github.com/clarethe/javascript-syntax/blob/main/async.md)**  +info [here](https://www.programiz.com/javascript/setTimeout)  
 
-7. **[What is a JSON?](https://github.com/clarethe/javascript-syntax/blob/main/json.md)**  +info [here](https://www.programiz.com/javascript/json)  
+9. **[What is a JSON?](https://github.com/clarethe/javascript-syntax/blob/main/json.md)**  +info [here](https://www.programiz.com/javascript/json)  
+
+10. **[Storing data in the browser](https://github.com/clarethe/javascript-syntax/blob/main/browser-storage.md)**  +info [here](https://javascript.info/data-storage)  
