@@ -193,6 +193,16 @@ const sum = euros.reduce((total, amount) => total + amount);
 sum // 118.11
 ```
 
+**`replace()`** - returns a new string with some or all matches of a pattern replaced by a replacement  +[info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)  
+
+```
+const phrase = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
+
+console.log(phrase.replace('dog', 'monkey'));
+// expected output: "The quick brown fox jumps over the lazy monkey. If the dog reacted, was it really lazy?"
+```
+
+
 ## Additionally:
 
 **`Array.isArray(arr)`** - checks 'arr' for being an array +[info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)  

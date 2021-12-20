@@ -30,3 +30,5 @@ This repository was created to have an overview and insight into the basics of J
 6. **[Loops and iteration](https://github.com/clarethe/javascript-syntax/blob/main/loops.md)**  +info [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)  
 
 7. **[Functions](https://github.com/clarethe/javascript-syntax/blob/main/functions.md)**  +info [here](https://www.programiz.com/javascript/function)  
+
+7. **[Asynchronous](https://github.com/clarethe/javascript-syntax/blob/main/async.md)**  +info [here](https://www.programiz.com/javascript/setTimeout)  
